@@ -65,14 +65,13 @@ git status -s
 
 ```
 git checkout -b <nome-da-branch>
-git commit -m <nome-do-commit>
 git push -u origin <nome-da-branch>
 ```
 
 ### Excluindo uma branch
 
 ```
-git branch -d <nome-da-branch> // local
+git branch -D <nome-da-branch> // local
 ```
 
 ```
@@ -82,7 +81,7 @@ git push origin --delete <nome-da-branch> // remote
 ### Listando todas as branches
 
 ```
-git branch --list
+git branch
 ```
 
 <hr/>
