@@ -8,7 +8,7 @@
 git init
 ```
 
-### Adicionando repositório remoto
+### Adicionando um repositório remoto
 
 ```
 git remote add origin <url-remote>
@@ -17,30 +17,19 @@ git push -u origin master
 
 <hr/>
 
-### Adicionando e commitando arquivos
+### Commit de novos arquivos/modificações
 
 ```
-git add .<arquivo> && git commit -m <nome-do-commit>
-```
-
-atalho
-
-```
-git cm <nome-do-commit>
+git add .<caminho-dos-arquivos>
+git commit -m <nome-do-commit>
 ```
 
 <hr/>
 
-### Push pra branch atual
+### Enviando modificações para branch atual
 
 ```
 git push origin HEAD
-```
-
-atalho
-
-```
-git psh
 ```
 
 <hr/>
@@ -53,19 +42,43 @@ git reset
 
 <hr/>
 
-### Adicionando novos arquivos num commit já existente
+### Adicionando novos arquivos no ultimo commit existente
 
 ```
-git add .<novo-arquivo>
+git add .<caminho-dos-arquivos>
 git commit --amend --no-edit
 ```
 
 <hr/>
 
-### Status resumido do repositório (git status -s)
+### Listar branches
 
 ```
-git st
+git branch --list
+```
+
+<hr/>
+
+### Listar mudar de branch
+
+```
+git checkout <nome-da-branch>
+```
+
+<hr/>
+
+### Merge da branch atual com outra
+
+```
+git merge <nome-da-branch>
+```
+
+<hr/>
+
+### Status resumido do repositório
+
+```
+git status -s
 ```
 
 <hr/>
@@ -93,11 +106,37 @@ Para aplicar as modificações guardadas:
 git stash pop
 ```
 
-# Configurações
-
-#### Abrir configurações globais do git no VS code:
+## # <b>Atalhos</b>
 
 ```
+git push origin HEAD
+-
+git psh
+```
+
+```
+git add --all && git commit -m <nome-do-commit>
+-
+git cm <nome-do-commit>
+```
+
+```
+git status -s
+-
+git st
+```
+
+## # <b>Configurações</b>
+
+### Abrir configurações globais do git no VS code:
+
+```
+
 git config --global core.editor code
 git config --global --edit
+
+```
+
+```
+
 ```
