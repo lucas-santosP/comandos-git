@@ -43,7 +43,7 @@ atalho
 git psh
 ```
 
-<hr/><hr/>
+<hr/>
 
 ### Desfazer todos arquivos adicionados no git add
 
@@ -51,7 +51,7 @@ git psh
 git reset
 ```
 
-<hr/><hr/>
+<hr/>
 
 ### Adicionando novos arquivos num commit já existente
 
