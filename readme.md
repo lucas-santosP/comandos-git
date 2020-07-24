@@ -17,7 +17,7 @@ git push -u origin master
 
 <hr/>
 
-### Commit de novos arquivos/modificações
+### Commit de novas modificações
 
 ```
 git add .<caminho-dos-arquivos>
@@ -51,7 +51,27 @@ git commit --amend --no-edit
 
 <hr/>
 
-### Listar branches
+## # <b>Branches</b>
+
+### Criando uma nova branch
+
+```
+git checkout -b <nome-da-branch>
+git commit -m <nome-do-commit>
+git push -u origin <nome-da-branch>
+```
+
+### Excluindo uma branch
+
+```
+git branch -d <nome-da-branch> // local
+```
+
+```
+git push origin --delete <nome-da-branch> // remote
+```
+
+### Listando todas as branches
 
 ```
 git branch --list
@@ -59,7 +79,7 @@ git branch --list
 
 <hr/>
 
-### Listar mudar de branch
+### Mudar de branch
 
 ```
 git checkout <nome-da-branch>
