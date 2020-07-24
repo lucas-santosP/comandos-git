@@ -51,6 +51,14 @@ git commit --amend --no-edit
 
 <hr/>
 
+### Status resumido do repositório
+
+```
+git status -s
+```
+
+<hr/><hr/>
+
 ## # <b>Branches</b>
 
 ### Criando uma nova branch
@@ -93,38 +101,7 @@ git checkout <nome-da-branch>
 git merge <nome-da-branch>
 ```
 
-<hr/>
-
-### Status resumido do repositório
-
-```
-git status -s
-```
-
-<hr/>
-
-## # <b>Outros</b>
-
-### Guardar modificações para commits futuros, stash (esconderijo)
-
-Para guardar modificações no stash
-
-```
-git add .<arquivo>
-git stash
-```
-
-para listar stashs existentes
-
-```
-git stash list
-```
-
-Para aplicar as modificações guardadas:
-
-```
-git stash pop
-```
+<hr/><hr/>
 
 ## # <b>Atalhos</b>
 
@@ -146,17 +123,32 @@ git status -s
 git st
 ```
 
-## # <b>Configurações</b>
+## # <b>Outros</b>
+
+### Guardar modificações para commits futuros, stash (esconderijo)
+
+Para guardar modificações no stash
+
+```
+git add .<arquivo>
+git stash
+```
+
+para listar stashes existentes
+
+```
+git stash list
+```
+
+Para aplicar as modificações guardadas:
+
+```
+git stash pop
+```
 
 ### Abrir configurações globais do git no VS code:
 
 ```
-
 git config --global core.editor code
 git config --global --edit
-
-```
-
-```
-
 ```
