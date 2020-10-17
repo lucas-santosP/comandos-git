@@ -97,7 +97,7 @@ git checkout <nome-da-branch>
 Para quando existe modificações na staging area, fará merge das modificações no novo branch
 
 ```
-git switch -m <nome-da-branch> //
+git switch -m <nome-da-branch>
 ```
 <hr/>
 
