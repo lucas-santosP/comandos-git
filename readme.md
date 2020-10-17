@@ -88,10 +88,17 @@ git branch
 
 ### Mudar de branch
 
+Para quando a staging area esta limpa
+
 ```
-git checkout <nome-da-branch>
+git checkout <nome-da-branch> 
 ```
 
+Para quando existe modificações na staging area, fará merge das modificações no novo branch
+
+```
+git switch -m <nome-da-branch> //
+```
 <hr/>
 
 ### Merge da branch atual com outra
